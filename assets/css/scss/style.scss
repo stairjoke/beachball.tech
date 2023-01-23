@@ -7,27 +7,33 @@
 //Foundation
 body {
 	margin: 0;
-	padding: 0.5em;
+	padding: 0.618em;
   background-color: var(--page);
 }
 
 main {
   min-height: 100vh;
+  margin-top: 1.618rem;
 }
 
 article {
-  margin-bottom: 4rem;
+  margin-bottom: 3.236rem;
 }
 
 h1 {
-	margin: 0.5em auto 1em auto;
-  max-width: 80vw;
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
+  @media(min-width: 768px){
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 h2 {
 	//The P element uses 2rem line height. Keep one visual line of text empty above
 	//an H2, and let the P element keep its own distance to the H2 on the top.
-	margin-top: 2rem;
+	margin-top: 1.618rem;
 	margin-bottom: 0;
 }
 
@@ -48,10 +54,10 @@ h2 {
 .icon {
 	vertical-align: middle;
 	&.lt {
-		margin-right: 0.5rem;
+		margin-right: 0.309rem;
 	}
 	&.rt {
-		margin-left: 0.5rem;
+		margin-left: 0.309rem;
 	}
 	&.single-height {
 		height: 1rem;
@@ -66,12 +72,13 @@ h2 {
 //Atoms
 .button {
 	display: inline-block;
-	padding: 0.5rem;
+	padding: 0.309rem;
 
 	/* Default button styles here */
 }
 
 hr {
   max-width: 100ch;
-  margin-top: 4rem;
+  margin-top: 3.236rem;
+  margin-bottom: 1.618rem;
 }

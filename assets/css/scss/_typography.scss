@@ -62,13 +62,13 @@ h1 {
     }
   }
   font-size: 1.618rem;
-  font-weight: 800;
-  text-align: center;
+  font-weight: 700;
   letter-spacing: 0.1rem;
   line-height: 1.5;
 
   @media (min-width: 768px) {
     font-size: 3.326rem;
+    text-align: center;
   }
 
   @media (min-width: 1280px) {
@@ -83,14 +83,14 @@ h2 {
       color: var(--text-LC);
     }
   }
-  font-size: 1.618rem;
-  font-weight: 600;
+  font-size: 1.309rem;
+  font-weight: 800;
 }
 
 h3 {
   line-height: 2;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 800;
   color: var(--text-LC);
   a {
     &:link, &:active, &:visited {
@@ -103,33 +103,39 @@ h3 {
 p {
   //Browsers lay out text in the middle of the line-height. Compensating for
   //line-height: 2 by moving it up 0.5em visually
-  margin-top: 0.5em;
-  margin-bottom: 1.5em;
+  margin-top: 0.309em;
+  margin-bottom: 0.618em;
 }
 
 figcaption {
   line-height: 1rem;
-  font-size: 0.85rem;
-  padding-top: 0.5rem;
+  font-size: 1rem;
+  padding-top: 1rem;
   text-align: left;
+  color: var(--text-LC);
 }
 
 blockquote {
-  padding: 0 0 0 1.5em;
+  padding: 0 0 0 0.618em;
   box-sizing: border-box;
   border-left: 2px solid var(--text-ghost);
+  background-color: var(--visually-grouped-light);
 
   p {
     font-style: italic;
-    margin: 0 0 1em 0;
+    margin: 0 0 0.618em 0;
   }
   figcaption {
-    font-size: 0.85em;
-    line-height: 2;
+    font-size: 1em;
+    line-height: 1.618;
+    color: var(--text-LC);
   }
 }
 
 //Footer
 footer {
-  font-size: 0.8em;
+  background-color: var(--visually-grouped);
+  padding: 0.309rem 0.618rem;
+  font-size: 1rem;
+  color: var(--text-LC);
 }

@@ -10,6 +10,7 @@
 
   --page: #fcfcfc;
   --visually-grouped: #e9eef5;
+  --visually-grouped-light: #F9F9F9;
   --visually-grouped-ranked: rgba(169, 188, 218, 0.25);
 
   @supports(--accent: color(display-p3 0 0.35 1)){
@@ -24,6 +25,7 @@
 
     --page: color(display-p3 0.989 0.99 0.991);
     --visually-grouped: color(display-p3 0.919 0.934 0.961);
+    --visually-grouped-light: color(display-p3 0.98 0.98 0.98);
     --visually-grouped-ranked: color(display-p3 0.676 0.736 0.844 / 0.25);
   }
 }
