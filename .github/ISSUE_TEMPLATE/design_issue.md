@@ -2,7 +2,7 @@
 name: Design Issue
 about: Create a report to help us improve
 title: ''
-labels: bug, inbox
+labels: bug, design
 assignees: stairjoke
 
 ---
