@@ -1,0 +1,19 @@
+figure {
+  margin: 0.5rem auto 1.5rem auto;
+  max-width: 120ch;
+  width: 100%;
+  text-align: center;
+  background-color: var(--visually-grouped);
+  line-height: 0;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+img, video {
+  width: 100%;
+  max-height: 90vh;
+  @supports (max-height: 90svh) {
+    max-height: 90svh;
+  }
+  height: auto;
+}

@@ -1,0 +1,77 @@
+@use 'colors';
+@use 'typography';
+@use 'media';
+@use 'mainNavigation';
+@use 'blog';
+
+//Foundation
+body {
+	margin: 0;
+	padding: 0.5em;
+  background-color: var(--page);
+}
+
+main {
+  min-height: 100vh;
+}
+
+article {
+  margin-bottom: 4rem;
+}
+
+h1 {
+	margin: 0.5em auto 1em auto;
+  max-width: 80vw;
+}
+
+h2 {
+	//The P element uses 2rem line height. Keep one visual line of text empty above
+	//an H2, and let the P element keep its own distance to the H2 on the top.
+	margin-top: 2rem;
+	margin-bottom: 0;
+}
+
+//CSS Quarts and Ions
+.contain {
+  max-width: 38rem; //62ch at 1rem
+  margin: 0 auto;
+}
+
+.contain-text {
+  p, ul, ol, blockquote, h2, h3, h4, figcaption, hr {
+    max-width: 38rem; //62ch at 1rem
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.icon {
+	vertical-align: middle;
+	&.lt {
+		margin-right: 0.5rem;
+	}
+	&.rt {
+		margin-left: 0.5rem;
+	}
+	&.single-height {
+		height: 1rem;
+		width: auto;
+	}
+	&.triple-height {
+		height: 3rem;
+		width: auto;
+	}
+}
+
+//Atoms
+.button {
+	display: inline-block;
+	padding: 0.5rem;
+
+	/* Default button styles here */
+}
+
+hr {
+  max-width: 100ch;
+  margin-top: 4rem;
+}

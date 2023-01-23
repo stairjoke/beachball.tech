@@ -1,0 +1,52 @@
+//Navigation
+nav.main {
+  //The Navigation is an *organized list* containing *unorganized lists.*
+  //It may contain many unorganized lists.
+
+  //Layout all items to right of navigation in general
+  ol, ul {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  //Layout first list-item of the organized list to the left
+  ol > li:first-child {
+    margin-right: auto;
+  }
+
+  //Adapt line-height of links if there is an icon or a button with an icon contained within the nav structure
+  ol:has(.button) {
+    line-height: 2rem;
+  }
+
+  ol:has(.triple-height) {
+    a {
+      line-height: 3rem;
+    }
+    &:has(.button) {
+      line-height: 4rem;
+    }
+  }
+
+  //All paddings and margins are part of the link-elements to maximize the clickable area
+  a {
+    padding: 0.5rem;
+    margin: 0 1rem;
+  }
+  //Disable the outer margins of the first and last list item's contained links
+  ul > li {
+    &:first-child {
+      a {
+        margin-left: 0;
+      }
+    }
+    &:last-child {
+      a {
+        margin-right: 0;
+      }
+    }
+  }
+}

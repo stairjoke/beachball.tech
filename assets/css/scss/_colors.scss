@@ -1,0 +1,29 @@
+:root {
+  //use this to create color variables etc. and implement dark/light mode
+  --accent: #005bff;
+  --visited: #0047b5;
+  --hover: #2086ff;
+  --text: #252626;
+  --text-LC: #3f3f40;
+  --text-title: #0c0c0d;
+  --text-ghost: #787d86;
+
+  --page: #fcfcfc;
+  --visually-grouped: #e9eef5;
+  --visually-grouped-ranked: rgba(169, 188, 218, 0.25);
+
+  @supports(--accent: color(display-p3 0 0.35 1)){
+    //use this to create color variables etc. and implement dark/light mode
+    --accent: color(display-p3 0 0.35 1);
+    --visited: color(display-p3 0.056 0.276 0.685);
+    --hover: color(display-p3 0.26 0.519 1);
+    --text: color(display-p3 0.149 0.15 0.152);
+    --text-LC: color(display-p3 0.248 0.249 0.253);
+    --text-title: color(display-p3 0.05 0.05 0.051);
+    --text-ghost: color(display-p3 0.475 0.493 0.525);
+
+    --page: color(display-p3 0.989 0.99 0.991);
+    --visually-grouped: color(display-p3 0.919 0.934 0.961);
+    --visually-grouped-ranked: color(display-p3 0.676 0.736 0.844 / 0.25);
+  }
+}
