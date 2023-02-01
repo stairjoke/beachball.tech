@@ -11,6 +11,15 @@ body {
   background-color: var(--page);
 }
 
+.no-edge {
+  margin-left: -0.618rem;
+  margin-right: -0.618rem;
+}
+
+.no-space {
+  margin: -0.618rem;
+}
+
 main {
   min-height: 100vh;
   margin-top: 1.618rem;
