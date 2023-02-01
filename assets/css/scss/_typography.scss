@@ -44,12 +44,15 @@ h1, h2, h3 {
   }
 }
 
-p.signature a {
-  color: var(--text);
-  text-decoration: none;
-
-  &:active, &:visited, &:hover, &:focus {
+a.signature {
+  &, &:link, &:active, &:visited {
     color: var(--text);
+    text-decoration: none;
+  }
+
+  &:hover, &:focus {
+    color: var(--text);
+    text-decoration: underline;
   }
 }
 
@@ -116,10 +119,10 @@ figcaption {
 }
 
 blockquote {
-  padding: 0 0 0 0.618em;
+  padding: 0 0.618rem 0 0.618rem;
   box-sizing: border-box;
   border-left: 2px solid var(--text-ghost);
-  background-color: var(--visually-grouped-light);
+  background-color: var(--visually-grouped);
 
   p {
     font-style: italic;
@@ -134,8 +137,22 @@ blockquote {
 
 //Footer
 footer {
-  background-color: var(--visually-grouped);
-  padding: 0.309rem 0.618rem;
   font-size: 1rem;
   color: var(--text-LC);
+  color: var(--text-inverted);
+
+  a {
+    &, &:link, &:active, &:visited {
+      color: var(--text-inverted);
+      text-decoration: underline;
+    }
+    &:hover, &:focus {
+      color: var(--text-inverted);
+      text-decoration: underline;
+    }
+  }
+
+  a[target="_blank"]:after, span.external {
+    background-image: url('../external-link-inverted.png');
+  }
 }

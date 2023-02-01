@@ -4,14 +4,14 @@
   --visited: #0047b5;
   --hover: #2086ff;
   --text: #252626;
+  --text-inverted: var(--page);
   --text-LC: #3f3f40;
   --text-title: #0c0c0d;
   --text-ghost: #787d86;
 
-  --page: #fcfcfc;
-  --visually-grouped: #e9eef5;
-  --visually-grouped-light: #F9F9F9;
-  --visually-grouped-ranked: rgba(169, 188, 218, 0.25);
+  --page: #FCFCFC;
+  --visually-grouped: #EFEFEF;
+  --visually-grouped-ranked: rgba(194, 194, 194, 0.25);
 
   @supports(--accent: color(display-p3 0 0.35 1)){
     //use this to create color variables etc. and implement dark/light mode
@@ -24,8 +24,7 @@
     --text-ghost: color(display-p3 0.475 0.493 0.525);
 
     --page: color(display-p3 0.989 0.99 0.991);
-    --visually-grouped: color(display-p3 0.919 0.934 0.961);
-    --visually-grouped-light: color(display-p3 0.98 0.98 0.98);
-    --visually-grouped-ranked: color(display-p3 0.676 0.736 0.844 / 0.25);
+    --visually-grouped: color(display-p3 0.94 0.94 0.94);
+    --visually-grouped-ranked: color(display-p3 0.76 0.76 0.76 / 0.25);
   }
 }

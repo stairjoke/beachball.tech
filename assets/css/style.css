@@ -3,13 +3,13 @@
   --visited: #0047b5;
   --hover: #2086ff;
   --text: #252626;
+  --text-inverted: var(--page);
   --text-LC: #3f3f40;
   --text-title: #0c0c0d;
   --text-ghost: #787d86;
-  --page: #fcfcfc;
-  --visually-grouped: #e9eef5;
-  --visually-grouped-light: #F9F9F9;
-  --visually-grouped-ranked: rgba(169, 188, 218, 0.25);
+  --page: #FCFCFC;
+  --visually-grouped: #EFEFEF;
+  --visually-grouped-ranked: rgba(194, 194, 194, 0.25);
 }
 @supports (--accent: color(display-p3 0 0.35 1)) {
   :root {
@@ -21,9 +21,8 @@
     --text-title: color(display-p3 0.05 0.05 0.051);
     --text-ghost: color(display-p3 0.475 0.493 0.525);
     --page: color(display-p3 0.989 0.99 0.991);
-    --visually-grouped: color(display-p3 0.919 0.934 0.961);
-    --visually-grouped-light: color(display-p3 0.98 0.98 0.98);
-    --visually-grouped-ranked: color(display-p3 0.676 0.736 0.844 / 0.25);
+    --visually-grouped: color(display-p3 0.94 0.94 0.94);
+    --visually-grouped-ranked: color(display-p3 0.76 0.76 0.76 / 0.25);
   }
 }
 
@@ -65,12 +64,13 @@ h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus {
   color: var(--accent);
 }
 
-p.signature a {
+a.signature, a.signature:link, a.signature:active, a.signature:visited {
   color: var(--text);
   text-decoration: none;
 }
-p.signature a:active, p.signature a:visited, p.signature a:hover, p.signature a:focus {
+a.signature:hover, a.signature:focus {
   color: var(--text);
+  text-decoration: underline;
 }
 
 h1 {
@@ -128,10 +128,10 @@ figcaption {
 }
 
 blockquote {
-  padding: 0 0 0 0.618em;
+  padding: 0 0.618rem 0 0.618rem;
   box-sizing: border-box;
   border-left: 2px solid var(--text-ghost);
-  background-color: var(--visually-grouped-light);
+  background-color: var(--visually-grouped);
 }
 blockquote p {
   font-style: italic;
@@ -144,10 +144,20 @@ blockquote figcaption {
 }
 
 footer {
-  background-color: var(--visually-grouped);
-  padding: 0.309rem 0.618rem;
   font-size: 1rem;
   color: var(--text-LC);
+  color: var(--text-inverted);
+}
+footer a, footer a:link, footer a:active, footer a:visited {
+  color: var(--text-inverted);
+  text-decoration: underline;
+}
+footer a:hover, footer a:focus {
+  color: var(--text-inverted);
+  text-decoration: underline;
+}
+footer a[target=_blank]:after, footer span.external {
+  background-image: url("../external-link-inverted.png");
 }
 
 figure {
@@ -238,13 +248,10 @@ body {
   background-color: var(--page);
 }
 
-.no-edge {
-  margin-left: -0.618rem;
-  margin-right: -0.618rem;
-}
-
-.no-space {
-  margin: -0.618rem;
+footer {
+  margin: 3.236rem -0.618rem -0.618rem -0.618rem;
+  padding: 0.309rem 0.618rem;
+  background-color: var(--accent);
 }
 
 main {
@@ -302,6 +309,11 @@ h2 {
   width: auto;
 }
 
+.visually-grouped {
+  background-color: var(--visually-grouped);
+  padding: 0.618rem;
+}
+
 .button {
   display: inline-block;
   padding: 0.309rem;
@@ -310,7 +322,7 @@ h2 {
 
 hr {
   max-width: 100ch;
-  margin-top: 3.236rem;
+  margin-top: 1.618rem;
   margin-bottom: 1.618rem;
 }
 

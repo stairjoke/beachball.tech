@@ -11,13 +11,11 @@ body {
   background-color: var(--page);
 }
 
-.no-edge {
-  margin-left: -0.618rem;
-  margin-right: -0.618rem;
-}
+footer {
+  margin: 3.236rem -0.618rem -0.618rem -0.618rem;
+  padding: 0.309rem 0.618rem;
 
-.no-space {
-  margin: -0.618rem;
+  background-color: var(--accent);
 }
 
 main {
@@ -46,7 +44,7 @@ h2 {
 	margin-bottom: 0;
 }
 
-//CSS Quarts and Ions
+//CSS Quarks and Ions
 .contain {
   max-width: 38rem; //62ch at 1rem
   margin: 0 auto;
@@ -78,6 +76,11 @@ h2 {
 	}
 }
 
+.visually-grouped {
+  background-color: var(--visually-grouped);
+  padding: 0.618rem;
+}
+
 //Atoms
 .button {
 	display: inline-block;
@@ -88,6 +91,6 @@ h2 {
 
 hr {
   max-width: 100ch;
-  margin-top: 3.236rem;
+  margin-top: 1.618rem;
   margin-bottom: 1.618rem;
 }
