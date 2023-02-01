@@ -1,3 +1,3 @@
 <footer class="no-space">
-	<?= $site->footer()->kirbytext() ?>
+	<div class="contain"><?= $site->footer()->kirbytext() ?></div>
 </footer>
