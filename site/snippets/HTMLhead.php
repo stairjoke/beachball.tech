@@ -1,5 +1,5 @@
 <head>
-	<meta property="og:title" content="<?= $site->title() ?>">
+	<meta property="og:title" content="<?= $page->title() ?>">
 	<meta property="og:site_name" content="<?= $page->title() ?>">
 	<meta property="og:url" content="<?= $page->url() ?>">
 	<meta property="og:description" content="<?php
