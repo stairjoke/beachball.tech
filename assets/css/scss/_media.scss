@@ -11,9 +11,5 @@ figure {
 
 img, video {
   width: 100%;
-  max-height: 90vh;
-  @supports (max-height: 90svh) {
-    max-height: 90svh;
-  }
   height: auto;
 }

@@ -173,13 +173,7 @@ figure {
 
 img, video {
   width: 100%;
-  max-height: 90vh;
   height: auto;
-}
-@supports (max-height: 90svh) {
-  img, video {
-    max-height: 90svh;
-  }
 }
 
 nav.main ol, nav.main ul {
