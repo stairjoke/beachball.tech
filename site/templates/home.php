@@ -11,6 +11,7 @@
 			<section class="contain">
 				<?php
 				$numberOfpostsToShowonHome = 5;
+				$countDown = $numberOfpostsToShowonHome;
 				
 				foreach(page('blog')->children()->listed()->flip() as $year) {
 					foreach($year->children()->listed()->flip() as $month) {
@@ -26,20 +27,21 @@
 							</article>
 							<?php
 							
-							$numberOfpostsToShowonHome--;
-							if($numberOfpostsToShowonHome < 1) {
+							$countDown--;
+							if($countDown < 1) {
 								break;
 							}
 						}
-						if($numberOfpostsToShowonHome < 1) {
+						if($countDown < 1) {
 							break;
 						}
 					}
-					if($numberOfpostsToShowonHome < 1) {
+					if($countDown < 1) {
 						break;
 					}
 				}
 				?>
+				<p>Showing <?= $numberOfpostsToShowonHome ?> most recent posts, <a href="<?= page('blog')->url() ?>">browse all posts.</a></p>
 			</section>
 		</main>
 		<?= snippet('footer') ?>
