@@ -8,6 +8,9 @@
 		<?= snippet('header') ?>
 		<main class="contain">
 			<h1><?= $page->title() ?></h1>
+			<?php
+				$numberOfPosts = 0;
+			?>
 			<?php foreach($page->children()->listed()->flip() as $year): ?>
 				
 				<?php
@@ -51,12 +54,16 @@
 									}
 								?>
 								<dd><a href="<?= $post->url() ?>"><?= $post->title() ?></a></dd>
+								<?php $numberOfPosts++; ?>
 								<?php endforeach; //post ?>
 							</dl>
 						</details>
 					<?php endforeach; //month ?>
 				</details>
 			<?php endforeach; //year ?>
+			<p>
+				<?= $numberOfPosts ?> Posts since September 2022.
+			</p>
 		</main>
 		<?= snippet('footer') ?>
 	</body>
