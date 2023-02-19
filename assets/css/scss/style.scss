@@ -37,11 +37,14 @@ h1 {
   }
 }
 
-h2, h3 {
-	//The P element uses 2rem line height. Keep one visual line of text empty above
-	//an H2, and let the P element keep its own distance to the H2 on the top.
+h2 {
 	margin-top: 1.618rem;
 	margin-bottom: 0;
+}
+
+h3 {
+  margin-top: 1.309rem;
+  margin-bottom: 0;
 }
 
 //CSS Quarks and Ions
