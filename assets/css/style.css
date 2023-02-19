@@ -4,7 +4,7 @@
   --hover: #2086ff;
   --text: #252626;
   --text-inverted: var(--page);
-  --text-LC: #3f3f40;
+  --text-LC: #505152;
   --text-title: #0c0c0d;
   --text-ghost: #787d86;
   --page: #FCFCFC;
@@ -17,7 +17,7 @@
     --visited: color(display-p3 0.056 0.276 0.685);
     --hover: color(display-p3 0.26 0.519 1);
     --text: color(display-p3 0.149 0.15 0.152);
-    --text-LC: color(display-p3 0.248 0.249 0.253);
+    --text-LC: color(display-p3 0.317 0.319 0.323);
     --text-title: color(display-p3 0.05 0.05 0.051);
     --text-ghost: color(display-p3 0.475 0.493 0.525);
     --page: color(display-p3 0.989 0.99 0.991);
@@ -105,12 +105,13 @@ h2 a:link, h2 a:active, h2 a:visited {
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.618rem;
   font-weight: 800;
-  color: var(--text-LC);
+  color: var(--text-title);
 }
 h3 a:link, h3 a:active, h3 a:visited {
-  color: var(--text-LC);
+  color: var(--text-title);
 }
 
 p, ul, ol {
@@ -125,6 +126,7 @@ li {
 em {
   font-style: italic;
   font-size: 1.1em;
+  line-height: 1.4709rem;
   font-family: -apple-system-ui-serif, system-ui-serif, "New York", "Palatino", ui-serif, serif;
   voice-stress: moderate;
 }
@@ -151,6 +153,17 @@ blockquote figcaption {
   font-size: 1em;
   line-height: 1.618;
   color: var(--text-LC);
+}
+
+.quotable {
+  font-size: 1.618em;
+  font-style: italic;
+  font-family: -apple-system-ui-serif, system-ui-serif, "New York", "Palatino", ui-serif, serif;
+  voice-stress: moderate;
+  border-left: solid 2px var(--accent);
+  padding-left: 1rem;
+  box-sizing: border-box;
+  margin: 2.236rem 0;
 }
 
 footer {
@@ -287,6 +300,9 @@ h2 {
 h3 {
   margin-top: 1.309rem;
   margin-bottom: 0;
+}
+h2 + h3 {
+  margin-top: 0.309rem;
 }
 
 .contain {

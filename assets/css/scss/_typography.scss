@@ -91,12 +91,13 @@ h2 {
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.618rem;
   font-weight: 800;
-  color: var(--text-LC);
+  color: var(--text-title);
   a {
     &:link, &:active, &:visited {
-      color: var(--text-LC);
+      color: var(--text-title);
     }
   }
 }
@@ -116,6 +117,7 @@ li {
 em {
   font-style: italic;
   font-size: 1.1em;
+  line-height: 1.4709rem;
   font-family: -apple-system-ui-serif, system-ui-serif, "New York", "Palatino", ui-serif, serif;
   voice-stress: moderate; //https://www.w3.org/TR/css-speech-1/
 }
@@ -143,6 +145,17 @@ blockquote {
     line-height: 1.618;
     color: var(--text-LC);
   }
+}
+
+.quotable {
+  font-size: 1.618em;
+  font-style: italic;
+  font-family: -apple-system-ui-serif, system-ui-serif, "New York", "Palatino", ui-serif, serif;
+  voice-stress: moderate; //https://www.w3.org/TR/css-speech-1/
+  border-left: solid 2px var(--accent);
+  padding-left: 1rem;
+  box-sizing: border-box;
+  margin: 2.236rem 0;
 }
 
 //Footer
