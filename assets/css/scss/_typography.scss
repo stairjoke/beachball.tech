@@ -102,17 +102,22 @@ h3 {
 }
 
 //Body Text
-p {
+p, ul, ol {
   //Browsers lay out text in the middle of the line-height. Compensating for
   //line-height: 2 by moving it up 0.5em visually
-  margin-top: 0.309em;
-  margin-bottom: 0.618em;
+  margin-top: 0.309rem;
+  margin-bottom: 0.618rem;
+}
+
+li {
+  margin: 0.618rem 0;
 }
 
 em {
   font-style: italic;
   font-size: 1.1em;
   font-family: -apple-system-ui-serif, system-ui-serif, "New York", "Palatino", ui-serif, serif;
+  voice-stress: moderate; //https://www.w3.org/TR/css-speech-1/
 }
 
 figcaption {
