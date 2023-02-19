@@ -170,6 +170,7 @@ sup {
   font-size: 0.8em;
   font-weight: 400;
   font-family: system-ui-mono, monospace;
+  pause: 20ms;
 }
 sup a {
   box-sizing: border-box;

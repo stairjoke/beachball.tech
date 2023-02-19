@@ -162,6 +162,7 @@ sup {
   font-size: 0.8em;
   font-weight: 400;
   font-family: system-ui-mono, monospace;
+  pause: 20ms; //https://www.w3.org/TR/css-speech-1/#pause-props
 
   a {
     box-sizing: border-box;
