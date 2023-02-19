@@ -113,15 +113,20 @@ h3 a:link, h3 a:active, h3 a:visited {
   color: var(--text-LC);
 }
 
-p {
-  margin-top: 0.309em;
-  margin-bottom: 0.618em;
+p, ul, ol {
+  margin-top: 0.309rem;
+  margin-bottom: 0.618rem;
+}
+
+li {
+  margin: 0.618rem 0;
 }
 
 em {
   font-style: italic;
   font-size: 1.1em;
   font-family: -apple-system-ui-serif, system-ui-serif, "New York", "Palatino", ui-serif, serif;
+  voice-stress: moderate;
 }
 
 figcaption {
