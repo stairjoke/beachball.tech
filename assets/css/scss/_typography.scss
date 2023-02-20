@@ -162,18 +162,20 @@ sup {
   font-size: 0.8em;
   font-weight: 400;
   font-family: system-ui-mono, monospace;
-  pause: 20ms; //https://www.w3.org/TR/css-speech-1/#pause-props
+  font-style: normal;
+  pause: 1.2s; //https://www.w3.org/TR/css-speech-1/#pause-props
+  speak-as: spell-out;
 
   a {
     box-sizing: border-box;
-    min-width: calc(0.8rem + 2px);
     text-align: center;
     display: inline-block;
     border-radius: 1rem;
-    padding: 2px 4px;
+    padding: 2px 4px 1px 4px;
+    margin-left: 1px;
     line-height: 1;
 
-    background-color: var(--text);
+    background-color: var(--text, #f0f);
 
     &, &:link, &:active, &:visited {
       color: var(--text-inverted);
