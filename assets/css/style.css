@@ -174,13 +174,15 @@ sup {
   pause: 1.2s;
   speak-as: spell-out;
 }
+cite > sup {
+  margin-left: 2px;
+}
 sup a {
   box-sizing: border-box;
   text-align: center;
   display: inline-block;
   border-radius: 1rem;
   padding: 2px 4px 1px 4px;
-  margin-left: 1px;
   line-height: 1;
   background-color: var(--text, #f0f);
 }
