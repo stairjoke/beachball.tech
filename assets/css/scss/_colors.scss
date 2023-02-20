@@ -13,7 +13,7 @@
   --visually-grouped: #EFEFEF;
   --visually-grouped-ranked: rgba(194, 194, 194, 0.25);
 
-  @supports(--accent: color(display-p3 0 0.35 1)){
+  @supports(color: color(display-p3 0 0.35 1)){
     //use this to create color variables etc. and implement dark/light mode
     --accent: color(display-p3 0 0.35 1);
     --visited: color(display-p3 0.056 0.276 0.685);
