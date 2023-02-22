@@ -1,4 +1,5 @@
 <head>
+	<meta charset="UTF-8">
 	<meta property="og:title" content="<?= $page->title() ?>">
 	<meta property="og:site_name" content="<?= $page->title() ?>">
 	<meta property="og:url" content="<?= $page->url() ?>">
@@ -21,11 +22,11 @@
 	?>
 
 	
-	<meta content="<?= $site->description() ?>">
+	<meta content="<?= $site->description() ?>" name="description">
 	<meta content="Wenzel Massag" name="author">
 	<meta content="index, follow" name="robots">
 	
-	<link rel="alternate" type="application/json" title="Latest posts" href="<?= site()->url() ?>/feed"/>
+	<link rel="alternate" type="application/json" title="Latest posts" href="<?= site()->url() ?>/feed">
 	
 	
 	<link href="/appIcons/apple-180.png" rel="apple-touch-icon" sizes="180x180">
@@ -42,7 +43,6 @@
 	<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
 	
 	<title><?= $site->title() ?></title>
-	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?= css('assets/css/style.css') ?>
 </head>
