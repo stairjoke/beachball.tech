@@ -14,7 +14,7 @@
 				</div>
 			</article>
 			<div class="contain visually-grouped">
-				<p><a class="signature" href="<?= $page->url() ?>" title="permalink">⌞w⌝</a> &mdash; To comment on this post: Toot it and @mention <a href="https://indieweb.social/@stairjoke" target="_blank">me.</a></p>
+				<p><a class="simple" href="<?= $page->url() ?>" title="permalink">⌞w⌝</a> | <time datetime="<?= $page->date()->toDate('Y-m-d H:i') ?>"><?= $page->date()->toDate('l, j F \1\2\,\0y') ?>  <a class="simple" href="/time">HE</a></time></p>
 			</div>
 		</main>
 		<?= snippet('footer') ?>

@@ -44,14 +44,12 @@ h1, h2, h3 {
   }
 }
 
-a.signature {
+a.simple {
   &, &:link, &:active, &:visited {
-    color: var(--text);
     text-decoration: none;
   }
 
   &:hover, &:focus {
-    color: var(--text);
     text-decoration: underline;
   }
 }

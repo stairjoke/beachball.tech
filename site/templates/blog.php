@@ -22,7 +22,7 @@
 				?>
 				
 				<details class="year"<?php if($yIndex < 1) {echo(' open');} ?>>
-					<summary class="year"><?= $year->title() ?></summary>
+					<summary class="year"><strong>Year:</strong> <?= $year->title() ?> <a href="/time">HE</a></summary>
 					<?php foreach($year->children()->listed()->flip() as $month): ?>
 						
 						<?php
@@ -62,7 +62,7 @@
 				</details>
 			<?php endforeach; //year ?>
 			<p>
-				<?= $numberOfPosts ?> Posts since September 2022.
+				<?= $numberOfPosts ?> Posts since September 12,022 <a href="/time">HE</a>.
 			</p>
 		</main>
 		<?= snippet('footer') ?>
