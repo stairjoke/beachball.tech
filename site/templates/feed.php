@@ -86,7 +86,7 @@
 		$itemGUIDNode = $rss->createElement('guid', $currentPage->url());
 		$itemNode->appendChild($itemGUIDNode);
 		
-		$itemDescription = htmlspecialchars($currentPage->teaser()->kirbytext()) . "<p><a href='". $currentPage->url() ."'>Continue reading…</a></p>";
+		$itemDescription = htmlspecialchars($currentPage->teaser()->markdown()) . "<p><a href='". $currentPage->url() ."'>Continue reading…</a></p>";
 		$itemDescriptionNode = $rss->createElement('description', $itemDescription);
 		$itemNode->appendChild($itemDescriptionNode);
 		

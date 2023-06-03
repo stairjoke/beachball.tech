@@ -10,7 +10,7 @@
 			<article>
 				<h1><?= $page->title() ?></h1>
 				<div class="contain-text">
-					<?= kirbytext($page->text()) ?>
+					<?= markdown($page->text()) ?>
 				</div>
 			</article>
 			<div class="contain visually-grouped">

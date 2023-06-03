@@ -1,5 +1,11 @@
 <?php
 	return [
-		'debug'  => false
+		'debug'  => false,
+		'content' => [
+			'extension' => 'md'
+		],
+		'markdown' => [
+			'extra' => true
+		]
 	];
 ?>
