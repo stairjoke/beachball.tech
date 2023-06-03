@@ -20,7 +20,7 @@
 							?>
 							<article>
 							<h2><a href="<?= $blogPost->url() ?>"><?= $blogPost->title() ?></a></h2>
-							<?= $blogPost->teaser()->markdown() ?>
+							<?= $blogPost->teaser()->kirbytext() ?>
 							<p>
 								<a href="<?= $blogPost->url() ?>"">Continue reading,</a> or <a href="<?= page('blog')->url() ?>">browse all posts.</a> Posted <time datetime="<?= $blogPost->date()->toDate('Y-m-d H:i') ?>"><?= $blogPost->date()->toDate('j F \1\2\,\0y') ?>  <a class="simple" href="/time">HE</a></time>
 							</p>
