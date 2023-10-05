@@ -1,62 +1,33 @@
-# Kirby .htaccess
-# revision 2022-09-15
-
-# rewrite rules
 <IfModule mod_rewrite.c>
-
-# enable awesome urls. i.e.:
-# http://yourdomain.com/about-us/team
-RewriteEngine on
-
-# make sure to set the RewriteBase correctly
-# if you are running the site in a subfolder;
-# otherwise links or the entire site will break.
-#
-# If your homepage is http://yourdomain.com/mysite,
-# set the RewriteBase to:
-#
-# RewriteBase /mysite
-
-# In some environments it's necessary to
-# set the RewriteBase to:
-#
-# RewriteBase /
-
-# block files and folders beginning with a dot, such as .git
-# except for the .well-known folder, which is used for Let's Encrypt and security.txt
-RewriteRule (^|/)\.(?!well-known\/) index.php [L]
-
-# block all files in the content folder from being accessed directly
-RewriteRule ^content/(.*) index.php [L]
-
-# block all files in the site folder from being accessed directly
-RewriteRule ^site/(.*) index.php [L]
-
-# block direct access to Kirby and the Panel sources
-RewriteRule ^kirby/(.*) index.php [L]
-
-# make site links work
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*) index.php [L]
-
-</IfModule>
-
-# pass the Authorization header to PHP
-SetEnvIf Authorization "(.+)" HTTP_AUTHORIZATION=$1
-
-# compress text file responses
-<IfModule mod_deflate.c>
-AddOutputFilterByType DEFLATE text/plain
-AddOutputFilterByType DEFLATE text/html
-AddOutputFilterByType DEFLATE text/css
-AddOutputFilterByType DEFLATE text/javascript
-AddOutputFilterByType DEFLATE application/json
-AddOutputFilterByType DEFLATE application/javascript
-AddOutputFilterByType DEFLATE application/x-javascript
-
-# Forward all connections to httpS
-RewriteCond %{SERVER_PORT} !^443$
-RewriteRule (.*) https://%{HTTP_HOST}/$1 [R=301,L]
-
+RewriteEngine On
+Redirect 301 /blog/2022/September/dynamic-island-limited-to-devices-with-120Hz https://wenzels.blog/@/page/EA7WBtcw9XGrp2Ly
+Redirect 301 /blog/2022/November/alexa-is-dead-long-live-siri https://wenzels.blog/@/page/PD1bjYm8URUquvIs
+Redirect 301 /blog/2022/December/apple-music-ux https://wenzels.blog/@/page/1mXL0SmqjzRcbw7o
+Redirect 301 /blog/2023/January/Why-I-left-Instagram https://wenzels.blog/@/page/A1bLgXM0J7rnUTz3
+Redirect 301 /blog/2023/January/Bill-Gates-E-Mail-On-Usability-2003 https://wenzels.blog/@/page/uCBop7wNWLTFyvbT
+Redirect 301 /blog/2023/January/Twitter https://wenzels.blog/@/page/C4KbZLF9wQYIhbKi
+Redirect 301 /blog/2023/January/YouTube-Premium https://wenzels.blog/@/page/widM1WbbEEEhKqar
+Redirect 301 /blog/2023/January/Google-vs-OpenAI https://wenzels.blog/@/page/bfxO2EhDYRvHYapG
+Redirect 301 /blog/2023/February/webkit-exclusivity https://wenzels.blog/@/page/6jlmm3kwRMR6h7Xh
+Redirect 301 /blog/2023/February/apples-arvr-headset https://wenzels.blog/@/page/lGTTkUXFCJpOs0Nl
+Redirect 301 /blog/2023/February/twitter-snapshot https://wenzels.blog/@/page/tsJlBGRfCtxJco0C
+Redirect 301 /blog/2023/February/how-to-mastodon https://wenzels.blog/@/page/iCqs3NR4gKkAyIlB
+Redirect 301 /blog/2023/February/social-media-ROI https://wenzels.blog/@/page/6nGjGukFMNpW5kDd
+Redirect 301 /blog/2023/February/pay-to-verify-your-identity https://wenzels.blog/@/page/wlVVBYSCzzuwUNic
+Redirect 301 /blog/2023/February/twitters-progressing-infirmity https://wenzels.blog/@/page/HmC3zqAgKw1NmbwY
+Redirect 301 /blog/2023/March/language-models-in-games https://wenzels.blog/@/page/uLewvkcUern3J1if
+Redirect 301 /blog/2023/March/verschlimmbesserung https://wenzels.blog/@/page/EHNk1S10f1MIYNZO
+Redirect 301 /blog/2023/March/apple-vs-ux https://wenzels.blog/@/page/Cq5HU0XWHdEt5BrM
+Redirect 301 /blog/2023/March/Apple-vs-AI https://wenzels.blog/@/page/KN219vAsjbzbXo27
+Redirect 301 /blog/2023/March/apple-podcasts-ads https://wenzels.blog/@/page/dtc6FU4Z0jRV5M30
+Redirect 301 /blog/2023/March/hey-GPT https://wenzels.blog/@/page/l269BJYyuS2Kf8I8
+Redirect 301 /blog/2023/May/Twitter-has-gone-great https://wenzels.blog/@/page/OkOHY7w5JCrTJTse
+Redirect 301 /blog/2023/May/after-twitter https://wenzels.blog/@/page/XAP176XkV6uqFGWn
+Redirect 301 /blog/2023/May/Meta-GDPR-fine https://wenzels.blog/@/page/cofqj0bxEDzjXp1t
+Redirect 301 /blog/2023/June/macos-14-sonoma https://wenzels.blog/@/page/EoPcfFZ57DlQJTgy
+Redirect 301 /blog/2023/September/why-so-quiet https://wenzels.blog/@/page/kBfaVwIv134Djxm6
+Redirect 301 /about https://wenzels.blog/@/page/fjZYJmcqXuBZfxxL
+Redirect 301 /time https://wenzels.blog/
+Redirect 301 /feed https://wenzels.blog/feed
+Redirect 301 / https://wenzels.blog/
 </IfModule>
