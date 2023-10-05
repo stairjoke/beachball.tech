@@ -27,7 +27,7 @@ Redirect 301 /blog/2023/May/after-twitter https://wenzels.blog/@/page/lLFkNlAbZ6
 Redirect 301 /blog/2023/May/Meta-GDPR-fine https://wenzels.blog/@/page/0VsHern6s1iY3weW
 Redirect 301 /blog/2023/June/macos-14-sonoma https://wenzels.blog/@/page/i9aOjSgQed9n0w2h
 Redirect 301 /blog/2023/September/why-so-quiet https://wenzels.blog/@/page/kBfaVwIv134Djxm6
-Redirect 301 /about 
+Redirect 301 /about https://wenzels.blog/@/page/fjZYJmcqXuBZfxxL
 Redirect 301 /time https://wenzels.blog/
 Redirect 301 /feed https://wenzels.blog/feed
 Redirect 301 / https://wenzels.blog/
